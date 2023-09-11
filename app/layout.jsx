@@ -12,6 +12,7 @@ const RootLayout = ({ children }) => {
     return (
         <html lang="en">
             <body suppressHydrationWarning={true}>
+            <Provider>
                 <div className="main">
                     <div className="gradient" />
                 </div>
@@ -19,7 +20,8 @@ const RootLayout = ({ children }) => {
                     <Nav />
                     {children}
                 </main>
-            </body>
+            </Provider>
+                </body>
         </html>
     );
 };
